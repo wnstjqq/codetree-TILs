@@ -1,4 +1,7 @@
 a,b,c = map(int, input().split())
-
-print(int(a == min(a,b) and a == min(b,c) and a == min(a,c)), end=' ')
+min_num = a
+if min_num > min(b,c):
+    min_num = min(b,c)
+    
+print(int(a == min_num), end=' ')
 print(int(a==b==c))
