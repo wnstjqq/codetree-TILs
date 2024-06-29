@@ -4,5 +4,5 @@ if m < 90:
     print(0)
 elif f >= 95:
     print(100000)
-else:
+elif f >= 90:
     print(50000)
