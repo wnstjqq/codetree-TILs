@@ -1,5 +1,5 @@
-a = map(int, input().split())
-b = map(int, input().split())
+a = input().split()
+b = input().split()
 
 if a[0] > b[0]:
     print("A")
