@@ -6,6 +6,8 @@ if n <= 7:
         print(31)
     else:
         print(30)
+        if n == 2:
+            print(28)
 else:
     if n % 2 == 0:
         print(31)
