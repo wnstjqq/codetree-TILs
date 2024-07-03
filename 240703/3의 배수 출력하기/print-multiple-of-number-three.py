@@ -1,6 +1,6 @@
 n = int(input())
-i = 1
+i = 3
 
 while i <= n:
-    print(3 * i, end=' ')
-    i += 1
+    print(i, end=' ')
+    i += 3
