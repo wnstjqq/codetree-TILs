@@ -1,4 +1,4 @@
-int = input().split()
+inp = input().split()
 a,b = int(inp[0]), int(inp[1])
 
 sum_val = 0
