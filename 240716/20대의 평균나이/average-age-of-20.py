@@ -8,3 +8,4 @@ while True:
         cnt += 1
     else:
         print(f"{sum_value/cnt:.2f}")
+        break
