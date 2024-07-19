@@ -5,6 +5,6 @@ for i in range(2 * n):
         for _ in range(1 + i//2):
             print("*", end=" ")
     else:
-        for _ in range(int(-0.5 * i + 4.5) + 1):
+        for _ in range((2 * n-i+1)//2):
             print("*", end=" ")
     print()
