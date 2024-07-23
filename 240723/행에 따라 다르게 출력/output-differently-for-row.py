@@ -11,5 +11,5 @@ for i in range(n):
             if i == 1:
                 print(n + 2 * (j+1), end=" ")
             else:
-                print(3 * n + n + 2 * (j+1))
+                print(3 * n + n + 2 * (j+1), end=" ")
     print()
