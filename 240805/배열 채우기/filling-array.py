@@ -4,6 +4,8 @@ for i in range(len(arr)):
     if arr[i] == 0:
         arr = arr[:i][::-1]
         break
-
+    else:
+        arr = arr[::-1]
+        
 for elem in arr:
     print(elem, end=" ")
