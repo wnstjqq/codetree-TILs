@@ -11,7 +11,7 @@ for _ in range(arr1.count(arr2[0])):
     
     idx = arr1.index(arr2[0])
     
-    while idx != len(arr1):
+    while main_list != arr2:
         main_list.append(arr1[idx])
         idx += 1
 
