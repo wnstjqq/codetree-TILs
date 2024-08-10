@@ -22,3 +22,6 @@ for _ in range(arr1.count(arr2[0])):
         break
     else:
         arr1.remove(arr2[0])
+
+if arr1.count(arr2[0]) == 0:
+    print("No")
