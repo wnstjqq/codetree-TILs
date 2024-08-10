@@ -3,18 +3,20 @@ n1, n2 = map(int, input().split())
 arr1 = list(map(int, input().split()))
 arr2 = list(map(int, input().split()))
 
-for elem1 in arr1:
-    if elem1 == arr2[0]:
-        idx = arr1.index(arr2[0])
+for _ in range(arr1.count(arr2[0])):
+    main_list, sub_list = [], []
+    
+    idx = arr1.index(arr2[0])
+    
+    for i in range(len(arr2)):
+        main_list.append(arr1[idx])
+        sub_list.append(arr2[i])
+        
+        idx += 1
 
-while True:
-    if arr1[idx] == arr2[-1]:
+    if main_list == sub_list:
         print("Yes")
         break
-        
-    for elem2 in arr2:
-        if elem2 != arr1[idx]:
-            print("No")
-            break
-        else:
-            idx += 1
+    else:
+        print("No")
+        break
