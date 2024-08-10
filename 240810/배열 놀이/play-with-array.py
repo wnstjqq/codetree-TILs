@@ -12,6 +12,7 @@ for _ in range(q):
             print(arr.index(a[1]) + 1)
         else:
             print(0)
-    else:
+    elif a[0] == 3:
         for i in range(a[1] - 1, a[2]):
             print(arr[i], end=" ")
+        print()
