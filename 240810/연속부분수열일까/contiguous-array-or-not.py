@@ -5,7 +5,7 @@ arr2 = list(map(int, input().split()))
 
 if arr2[0] not in arr1:
     print("No")
-    
+
 for _ in range(arr1.count(arr2[0])):
     main_list, sub_list = [], []
     
@@ -21,5 +21,4 @@ for _ in range(arr1.count(arr2[0])):
         print("Yes")
         break
     else:
-        print("No")
-        break
+        arr1.remove(arr2[0])
