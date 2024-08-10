@@ -7,12 +7,14 @@ for _ in range(q):
 
     if a[0] == 1:
         print(arr[a[1] - 1])
+
     elif a[0] == 2:
+        idx = -1
         if a[1] in arr:
-            print(arr.index(a[1]) + 1)
-        else:
-            print(0)
-    elif a[0] == 3:
+            idx = arr.index(a[1])
+        print(idx + 1)
+
+    else:
         for i in range(a[1] - 1, a[2]):
             print(arr[i], end=" ")
         print()
