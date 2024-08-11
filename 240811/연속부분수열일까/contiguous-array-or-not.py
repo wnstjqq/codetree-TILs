@@ -17,7 +17,9 @@ for _ in range(arr1.count(arr2[0])):
 
     if main_list == arr2:
         print("Yes")
+        break
     else:
         arr1.remove(arr2[0])
         if arr1.count(arr2[0]) == 0:
             print("No")
+            break
