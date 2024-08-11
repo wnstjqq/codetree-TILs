@@ -15,6 +15,10 @@ for _ in range(arr1.count(arr2[0])):
     
     idx = arr1.index(arr2[0])
 
+    if len(arr1[idx:]) < len(arr2):
+        print("No")
+        break
+
     for _ in range(len(arr2)):
         main_list.append(arr1[idx])
         idx += 1
