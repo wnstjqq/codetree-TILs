@@ -18,6 +18,10 @@ else:
     for elem2 in arr[1:]:
         if max_val < elem2:
             max_val = elem2
+    
+    if max_val == arr[0]:
+        second_max_val = arr[1]
+
     arr.remove(max_val)
     for elem3 in arr[1:]:
         if second_max_val < elem3:
