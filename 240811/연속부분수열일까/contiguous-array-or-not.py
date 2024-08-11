@@ -7,6 +7,10 @@ if arr2[0] not in arr1:
     print("No")
 
 for _ in range(arr1.count(arr2[0])):
+    if len(arr2) > len(arr1):
+        print("No")
+        break
+
     main_list = []
     
     idx = arr1.index(arr2[0])
