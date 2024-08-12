@@ -1,13 +1,10 @@
 N = int(input())
 arr = list(map(int, input().split()))
 
-overlapped = True
+unoverlapped_list = []
 
 for elem in arr:
     if arr.count(elem) == 1:
-        overlapped = False
+        unoverlapped_list.append(elem)
 
-if overlapped == False:
-    print(max(arr))
-else:
-    print(-1)
+print(max(unoverlapped_list))
