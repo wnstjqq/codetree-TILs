@@ -8,4 +8,4 @@ for elem in arr:
     else:
         under500.append(elem)
 
-print(max(under500), min(over(500)))
+print(max(under500), min(over500))
