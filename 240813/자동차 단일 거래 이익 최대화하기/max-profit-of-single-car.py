@@ -9,7 +9,7 @@ else:
     for i in range(len(arr) - 1):
         for j in range(i + 1, len(arr)):
             profit = []
-            if arr[i] < arr[j]:
+            if arr[i] <= arr[j]:
                 profit.append(arr[j] - arr[i])
                 max_numbers.append(max(profit))
 
