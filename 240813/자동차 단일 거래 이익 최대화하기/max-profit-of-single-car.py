@@ -3,7 +3,7 @@ arr = list(map(int, input().split()))
 
 max_numbers = []
 
-for i in range(len(arr) - 1):
+for i in range(len(arr)):
     for j in range(i + 1, len(arr)):
         profit = []
         if arr[i] <= arr[j]:
@@ -13,4 +13,4 @@ for i in range(len(arr) - 1):
 if len(max_numbers) == 0:
     print(0)
 else:
-    max(max_numbers)
+    print(max(max_numbers))
