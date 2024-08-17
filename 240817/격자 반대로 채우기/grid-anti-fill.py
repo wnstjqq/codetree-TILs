@@ -7,12 +7,13 @@ arr_1 = [
 
 cnt = 1
 for i in range(n-1, -1, -1):
-    for j in range(n-1, -1, -1):
-        if i % 2 == 1:
+    if i % 2 == 1:
+        for j in range(n-1, -1, -1):
             arr_1[j][i] = cnt
             cnt += 1
-        else:
-            arr_1[n-j-1][i] = cnt
+    else:
+        for j in range(n):
+            arr_1[j][i] = cnt
             cnt += 1
 
 for row in arr_1:
