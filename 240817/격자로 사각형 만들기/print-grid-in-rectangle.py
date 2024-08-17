@@ -1,8 +1,8 @@
 n = int(input())
 
 arr_1 = [
-    [0 for _ in range(5)]
-    for _ in range(5)
+    [0 for _ in range(n)]
+    for _ in range(n)
 ]
 
 for i in range(n):
