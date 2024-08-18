@@ -10,7 +10,7 @@ cnt = 0
 
 for string in inp:
     s_string += len(string)
-    if 'a' in string:
+    if 'a' in string[0]:
         cnt += 1
 
 print(s_string, cnt)
