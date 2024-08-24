@@ -13,7 +13,8 @@ for elem in inp[1:]:
         cnt = 1
         alp = elem
         s.append(alp)
-s.append(cnt)
+for count in str(cnt):
+    s.append(count)
 
 print(len(s))
 
