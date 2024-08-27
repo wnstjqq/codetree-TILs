@@ -21,5 +21,8 @@ while True:
 
     if lena == 0:
         break
+    
+    if lena < lenb:
+        break
 
 print("".join(A))
