@@ -10,14 +10,16 @@ while True:
     A = "".join(A)
     if A[cnt:cnt+lenb] == B:
         A = list(A)
-        for i in range(lenb):
+        for i in range(lenb - 1, -1, -1):
             A.pop(cnt + i)
-            cnt -= 1
         cnt = 0
     else:
         cnt += 1
     
     if cnt == lena - lenb + 1:
+        break
+
+    if lena == 0:
         break
 
 print("".join(A))
