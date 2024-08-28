@@ -10,5 +10,5 @@ while True:
 
 print(len(arr))
 
-for i in range(0, len(arr) + 1, 2):
+for i in range(0, len(arr), 2):
     print(arr[i])
