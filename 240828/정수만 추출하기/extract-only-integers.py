@@ -8,14 +8,14 @@ for elem1 in A:
     if elem1.isdigit():
         n1 += elem1
     else:
-        s += int(n1)
-        n1 = ""
+        break
+s += int(n1)
     
 for elem2 in B:   
     if elem2.isdigit():
         n2 += elem2
     else:
-        s += int(n2)
-        n2 = ""
+        break
+s += int(n2)
 
 print(s)
