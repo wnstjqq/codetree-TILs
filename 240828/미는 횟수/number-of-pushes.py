@@ -9,7 +9,7 @@ for _ in range(len(A) + 1):
     A = A[-1] + A[:-1]
     cnt += 1
 
-if cnt == 7:
+if cnt == len(A) + 1:
     print(-1)
 else:
     print(cnt)
