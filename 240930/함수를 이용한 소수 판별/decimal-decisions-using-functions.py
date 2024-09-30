@@ -9,6 +9,8 @@ def isPrime(n):
 s = 0 
 
 for j in range(a, b + 1):
+    if a == 1:
+        break
     if isPrime(j):
         s += j
 
