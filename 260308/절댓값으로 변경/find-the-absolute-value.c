@@ -6,7 +6,7 @@ int arr[MAX_N];
 void absoluteValue(int* arr, int n) {
     for (int i = 0; i < n; i++) {
         if (*(arr + i) < 0) {
-            *(arr + i) * -1;
+            *(arr + i) *= -1;
         }
     }
 }
@@ -21,7 +21,7 @@ int main() {
     absoluteValue(arr, n);
 
     for (int i = 0; i < n; i++) {
-        printf(arr[i]);
+        printf("%d ", arr[i]);
     }
     
     return 0;
