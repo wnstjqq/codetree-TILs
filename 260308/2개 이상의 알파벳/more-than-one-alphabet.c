@@ -3,16 +3,12 @@
 char A[101];
 
 int variousAlphabet(char* arr, int n) {
-    for (int i = 0; i < n; i++) {
-        int cnt = 0;
+    for (int i = 0; i < n - 1; i++) {
         char c = *(arr + i);
-        for (int j = 0; j < n; j++) {
+        for (int j = i + 1; j < n; j++) {
             if (c != *(arr + j)) {
-                cnt++;
+                return 1;
             }
-        }
-        if (cnt >= 2) {
-            return 1;
         }
     }
     return 0;
@@ -25,7 +21,6 @@ int lengthArr(char* arr) {
         length++;
         i++;
     }
-    
     return length;
 }
 
